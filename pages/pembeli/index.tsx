@@ -153,7 +153,7 @@ export default function FormParfum() {
          })
          .catch(function (error) {
          
-          alert('error from mahasiswa in api mahasiswa: '+error);
+          alert('error from parfum in api parfum: '+error);
          });;
           }
       getParfum();

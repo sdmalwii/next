@@ -124,7 +124,7 @@ export default function FormPemesanan() {
          })
          .catch(function (error) {
          
-          alert('error from mahasiswa in api mahasiswa: '+error);
+          alert('error from parfum in api parfum: '+error);
          });;
           }
       getPemesanan();
@@ -182,7 +182,7 @@ export default function FormPemesanan() {
 
         <tr>
             <td><label> Alamat Lengkap : </label></td>
-            <td><input type="text" id="alamat"   name="alamat"/></td>
+            <td><textarea id="alamat" style={{resize:"none"}} name="alamat"></textarea></td>
         </tr> 
         
         <br ></br>
@@ -231,8 +231,10 @@ export default function FormPemesanan() {
 
         <tr>
             <td><label> Alamat Lengkap : </label></td>
-            <td><input type="text" id="alamat"  value={alamat} name="alamat"
-               onChange={(e) => setAlamat(e.target.value)}/></td>
+            {/* <td><input type="text" id="alamat"  value={alamat} name="alamat"
+               onChange={(e) => setAlamat(e.target.value)}/></td> */}
+            <td><textarea  id="alamat" style={{resize: "none"}} value={alamat} name="alamat" 
+            onChange={(e) => setAlamat(e.target.value)}></textarea></td>
         </tr>
         
         <br ></br>
